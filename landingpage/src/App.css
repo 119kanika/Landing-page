@@ -1,0 +1,27 @@
+/* background component css */
+h1 {
+  margin: 0;
+  padding: 3.5vh 0;
+}
+.text-div {
+  color: rgb(106, 106, 106);
+  padding: 4vh 6vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 53px;
+  font-weight: 550;
+  width: 320px;
+  height: 500px;
+  word-wrap: break-word;
+  z-index: 1;
+}
+
+/* main content css */
+.main-content {
+  position: absolute;
+  top: 28vh;
+  left: 32vh;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 110px 1fr;
+}
