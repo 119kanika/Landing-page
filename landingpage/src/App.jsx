@@ -11,9 +11,9 @@ function App() {
       <Header />
       <Background />
       <div className="main-content">
-        <Explore />
-        <Divider />
         <Collectible />
+        <Divider />
+        <Explore />
       </div>
     </div>
   );

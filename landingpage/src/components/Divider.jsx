@@ -1,5 +1,5 @@
 const Divider = () => {
-  return <div style={{ backgroundColor: "pink" }}>Divider</div>;
+  return <div>Divider</div>;
 };
 
 export default Divider;

@@ -3,9 +3,9 @@ import logo from "../images/Logo.png";
 
 const Header = () => {
   return (
-    <div className="main-body">
-      <img src={icon} />
-      <img src={logo} alt="" />
+    <div className="header">
+      <img className="icons" src={icon} />
+      <img className="icons" src={logo} alt="" />
     </div>
   );
 };
