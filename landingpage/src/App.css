@@ -1,6 +1,8 @@
 /* background component css */
 * {
-  font-family: "Lexend";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -8,12 +10,14 @@
 }
 
 h1 {
-  margin: 0;
+  margin: 1px;
   padding: 2vh 0;
+  font-family: "Lexend";
 }
 .text-div {
   color: rgb(68, 68, 68);
-  padding: 5vh 6vh;
+  margin-left: 5vh;
+  padding: 5vh 1vh;
   display: flex;
   flex-direction: column;
   font-size: 42px;
@@ -28,19 +32,22 @@ h1 {
 /* main content css */
 .main-content {
   position: absolute;
+  width: 85%;
+  /* border: 1px solid red; */
   top: 15.6vh;
   left: 28vh;
-  /* border: 1px solid black; */
   display: grid;
-  grid-template-columns: 1fr 110px 1fr;
+  grid-template-columns: 40% 5% 1fr;
+  font-family: "Lexend";
+  z-index: 2;
 }
 
-/* collectibles css */
+/* slideshow css */
 
 .slideshow {
-  margin: 0 auto;
-  overflow: hidden;
-  max-width: 500px;
+  margin: -1 auto;
+  overflow: visible;
+  max-width: 312px;
 }
 
 .slideshowSlider {
@@ -67,4 +74,51 @@ h1 {
 p {
   margin: 0;
   padding: 0;
+}
+
+/* divider css */
+
+.divider {
+  z-index: 99;
+  font-family: "Krona One";
+  font-weight: bolder;
+  font-size: 100%;
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.divider p {
+  background-color: plum;
+  margin: 0;
+  padding: 3vh;
+  position: absolute;
+  top: 0;
+  writing-mode: inherit;
+  text-orientation: inherit;
+  word-spacing: 9px;
+  transform: translateY(100%);
+  animation: scrole 10s linear infinite;
+}
+
+@keyframes scrole {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* explore css */
+.explore {
+  z-index: 99;
+  background-color: black;
+  height: 100vh;
+  background-color: #15181b;
 }
