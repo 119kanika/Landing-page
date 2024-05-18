@@ -1,7 +1,12 @@
+/* eslint-disable react/prop-types */
 import imagesList from "../utils/Collections";
 import { useEffect, useRef, useState } from "react";
 
-const Collectible = () => {
+const SlideShow = ({ data }) => {
+  if (!Array.isArray(data)) {
+    throw new Error("Data must be an array");
+  }
+
   const [index, setIndex] = useState(0);
   const timeOutRef = useRef(null);
   const delay = 3000;
@@ -33,7 +38,7 @@ const Collectible = () => {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {imagesList.map((image) => (
+        {data.map((image) => (
           <div key={image.id} className="slide">
             <div className="details">
               <h2>Lunar Palace:</h2>
@@ -47,4 +52,4 @@ const Collectible = () => {
   );
 };
 
-export default Collectible;
+export default SlideShow;
