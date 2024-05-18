@@ -1,5 +1,5 @@
-import icon from "../images/icon.png";
-import logo from "../images/Logo.png";
+import icon from "../../public/images/icon.png";
+import logo from "../../public/images/Logo.png";
 
 const Header = () => {
   return (

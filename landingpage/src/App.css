@@ -33,20 +33,17 @@ h1 {
 /* main content css */
 .main-content {
   position: absolute;
-  width: 85%;
   top: 15.6vh;
   left: 28vh;
   display: grid;
-  grid-template-columns: 40% 5% 1fr;
+  grid-template-columns: 1fr 5% 1fr;
   font-family: "Lexend";
   z-index: 2;
-  /* border: 1px solid yellow; */
 }
 
 /* slideshow css */
 
 .slideshow {
-  /* margin: -1 auto; */
   overflow: visible;
   max-width: 312px;
 }
@@ -129,7 +126,6 @@ p {
   flex-direction: column;
   padding: 0 10vh;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 .explore h2 {
@@ -157,7 +153,6 @@ p {
 .people {
   margin: 3vh 0;
   padding: 2vh 0;
-  /* border: 1px solid black; */
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -190,7 +185,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .card-details {
@@ -198,7 +192,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
   font-size: 7px;
-  /* margin-bottom: 8px; */
 }
 
 .card-details .year {
@@ -235,19 +228,61 @@ p {
   cursor: pointer;
 }
 
+/* events details css */
+
+.explore-event {
+  margin-top: 10%;
+}
+
+.event-details {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-desc {
+  width: 350px;
+  padding: 4% 0 7% 0;
+}
+
+.cards img {
+  margin: 2% 1% 0 0;
+  border-radius: 10%;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 5% 0;
+}
+
+.more img {
+  width: 60px;
+  height: 60px;
+}
+
+.more button {
+  margin: 2% 0;
+  padding: 3% 0;
+  width: 34%;
+  border: none;
+}
+
 /* toggle buttons */
 
 .toggle-btn {
-  /* border: 1px solid red; */
   width: 300px;
   position: absolute;
   bottom: 5%;
   left: 6%;
+  z-index: 10;
 }
 
-.event-btn .collection-btn {
-  border: none;
+.event-btn {
   background-color: rgba(40, 43, 48, 1);
+  border: none;
   color: white;
   font-size: medium;
   font-weight: 600;
@@ -257,6 +292,148 @@ p {
   cursor: pointer;
 }
 
-.event-btn .collection-btn:hover {
+.collection-btn {
+  background-color: rgba(40, 43, 48, 1);
+  border: none;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  margin: 4% 1%;
+  padding: 5% 10%;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.event-btn:hover {
   background-color: rgb(31, 34, 37);
 }
+.collection-btn:hover {
+  background-color: rgb(31, 34, 37);
+}
+
+/* responside web design */
+
+@media (max-width: 768px) {
+}
+
+/* @media (max-width: 1024px) {
+  .text-div {
+    margin-left: 5vh;
+    font-size: 36px;
+    width: 200px;
+    height: auto;
+  }
+
+  .main-content {
+    top: 12vh;
+    left: 15vh;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+  }
+
+  .slideshow {
+    max-width: 100%;
+  }
+  .explore {
+    padding: 0 5vh;
+  }
+
+  .people {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .more {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    left: 0;
+    bottom: 2%;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .text-div {
+    margin-left: 0;
+    padding: 3vh 1vh;
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+
+  .slideshow {
+    max-width: 100%;
+  }
+
+  .divider {
+    top: 0;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .divider p {
+    padding: 2vh;
+  }
+
+  .explore {
+    padding: 0 2vh;
+  }
+
+  .heading-explore h1 {
+    word-spacing: 2vh;
+    font-size: 18px;
+  }
+
+  .people {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .more {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    left: 0;
+    bottom: 1%;
+    justify-content: center;
+    display: flex;
+  }
+}  */

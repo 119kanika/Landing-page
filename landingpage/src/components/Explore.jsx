@@ -1,9 +1,9 @@
-import elipse1 from "../images/Ellipse1.png";
-import elipse2 from "../images/Ellipse2.png";
-import elipse3 from "../images/Ellipse3.png";
-import elipse4 from "../images/Ellipse4.png";
-import elipse5 from "../images/Ellipse5.png";
-import img5 from "../images/ImageColl5.png";
+import elipse1 from "../../public/images/Ellipse1.png";
+import elipse2 from "../../public/images/Ellipse2.png";
+import elipse3 from "../../public/images/Ellipse3.png";
+import elipse4 from "../../public/images/Ellipse4.png";
+import elipse5 from "../../public/images/Ellipse5.png";
+import img5 from "../../public/images/ImageColl5.png";
 
 const Explore = () => {
   return (

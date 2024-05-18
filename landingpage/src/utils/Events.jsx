@@ -1,7 +1,7 @@
-import img1 from "../images/ImgEvent1.jpg";
-import img2 from "../images/ImgEvent2.jpg";
-import img3 from "../images/ImgColl3.jpg";
-import img4 from "../images/ImgColl4.jpg";
+import img1 from "../../public/images/ImgEvent1.jpg";
+import img2 from "../../public/images/ImgEvent2.jpg";
+import img3 from "../../public/images/ImgColl3.jpg";
+import img4 from "../../public/images/ImgColl4.jpg";
 
 const eventsList = [
   {

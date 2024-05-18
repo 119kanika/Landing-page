@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import imagesList from "../utils/Collections";
 import { useEffect, useRef, useState } from "react";
 
 const SlideShow = ({ data }) => {
   if (!Array.isArray(data)) {
-    throw new Error("Data must be an array");
+    throw new Error("data must be an array");
   }
 
   const [index, setIndex] = useState(0);
@@ -22,7 +21,7 @@ const SlideShow = ({ data }) => {
     timeOutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === imagesList.length - 1 ? 0 : prevIndex + 1
+          prevIndex === data.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -30,7 +29,7 @@ const SlideShow = ({ data }) => {
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  }, [index, data.length]);
 
   return (
     <div className="slideshow">
