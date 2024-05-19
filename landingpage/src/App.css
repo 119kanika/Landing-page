@@ -21,10 +21,10 @@ h1 {
   padding: 5vh 1vh;
   display: flex;
   flex-direction: column;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 550;
-  width: 250px;
-  height: 500px;
+  width: 245px;
+  height: 480px;
   word-wrap: break-word;
   z-index: 1;
   line-height: 1.1;
@@ -33,7 +33,7 @@ h1 {
 /* main content css */
 .main-content {
   position: absolute;
-  top: 15.6vh;
+  top: 20vh;
   left: 28vh;
   display: grid;
   grid-template-columns: 1fr 5% 1fr;
@@ -45,7 +45,7 @@ h1 {
 
 .slideshow {
   overflow: visible;
-  max-width: 312px;
+  max-width: 340px;
 }
 
 .slideshowSlider {
@@ -56,15 +56,15 @@ h1 {
 .slide {
   display: inline-block;
   height: 400px;
-  width: 100%;
+  width: 85%;
   border-radius: 40px;
   color: white;
   font-weight: 900;
 }
 
 .Coll-images {
-  width: 40vh;
-  height: 60vh;
+  width: 35vh;
+  height: 50vh;
   opacity: 0.8;
 }
 
@@ -118,7 +118,7 @@ p {
 .explore {
   font-family: "Lexend";
   position: relative;
-  top: -10%;
+  top: -15%;
   z-index: 99;
   color: white;
   background-color: #15181b;
@@ -129,7 +129,7 @@ p {
 }
 
 .explore h2 {
-  width: 341px;
+  width: 340px;
 }
 
 .heading-explore {
@@ -140,7 +140,7 @@ p {
   word-spacing: 10vh;
   width: 200px;
   height: 130px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .description h3 {
@@ -180,7 +180,7 @@ p {
   background: rgba(185, 160, 255, 1);
   margin-right: 10px;
   border-radius: 5%;
-  width: 160px;
+  width: 130px;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -313,10 +313,7 @@ p {
 
 /* responside web design */
 
-@media (max-width: 768px) {
-}
-
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .text-div {
     margin-left: 5vh;
     font-size: 36px;
@@ -436,4 +433,65 @@ p {
     justify-content: center;
     display: flex;
   }
-}  */
+}
+
+@media (max-width: 470px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+  }
+  .slide {
+    display: inline-block;
+    height: 400px;
+    width: 85%;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+  }
+
+  .slideshow {
+    overflow: visible;
+    max-width: 300px;
+  }
+
+  .Coll-images {
+    width: 20vh;
+    height: 30vh;
+    opacity: 0.8;
+  }
+
+  .toggle-btn {
+    /* width: 300px; */
+    position: absolute;
+    /* top: 2%;
+    left: 2%; */
+    z-index: 10;
+  }
+
+  .event-btn {
+    background-color: rgba(40, 43, 48, 1);
+    border: none;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    margin: 4% 1%;
+    padding: 5% 10%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .collection-btn {
+    background-color: rgba(40, 43, 48, 1);
+    border: none;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    margin: 4% 1%;
+    padding: 5% 10%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
